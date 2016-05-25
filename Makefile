@@ -2,7 +2,6 @@ REGION := eu-west-1
 
 # generate the zip
 generate:
-	rm ./ProcessEvent.zip
 	zip -r ./ProcessEvent.zip ./main
 
 
