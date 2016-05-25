@@ -1,11 +1,9 @@
-HOME := /Users/Charpi/es-sandbox
-PROJECT := /Users/Charpi/es-sandbox/eslambda
 REGION := eu-west-1
 
 # generate the zip
 generate:
-	rm $(HOME)/ProcessEvent.zip
-	zip -r $(HOME)/ProcessEvent.zip $(PROJECT)/main
+	rm ./ProcessEvent.zip
+	zip -r ./ProcessEvent.zip ./main
 
 
 # upload the zip to update aws lambda code
